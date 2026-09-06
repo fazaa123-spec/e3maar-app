@@ -12,9 +12,16 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'e3maar App',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
       home: Scaffold(
-        appBar: AppBar(title: const Text('e3maar')),
-        body: const Center(child: Text('التطبيق اشتغل')),
+        appBar: AppBar(
+          title: const Text('e3maar'),
+        ),
+        body: const Center(
+          child: Text('التطبيق اشتغل بنجاح'),
+        ),
       ),
     );
   }
