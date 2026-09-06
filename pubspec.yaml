@@ -1,4 +1,4 @@
-name: e3maar_hrefeen
+name: e3maar
 description: "تطبيق إعمار - منصة ربط العملاء بالحرفيين"
 publish_to: 'none'
 
@@ -22,3 +22,4 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  generate: true
