@@ -2,13 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-void main() {
-  runApp(const E3maarApp());
-}
+void main() => runApp(const E3maarApp());
 
 class E3maarApp extends StatelessWidget {
   const E3maarApp({super.key});
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -31,7 +28,7 @@ class E3maarApp extends StatelessWidget {
           foregroundColor: Colors.white,
         ),
       ),
-      home: const HomeScreen(),
+      home: const HomeScreen(), // <-- دا المهم
     );
   }
 }
@@ -42,7 +39,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('إعمار')),
-      body: const Center(child: Text('مرحبا بك في تطبيق إعمار', style: TextStyle(fontSize: 20))),
+      body: const Center(child: Text('مرحبا بك في تطبيق إعمار', style: TextStyle(fontSize: 22))),
     );
   }
 }
